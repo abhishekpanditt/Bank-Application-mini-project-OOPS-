@@ -1,11 +1,30 @@
 package bank.application;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         SBI.rateOfInterest = 7;
         HDFC.rateOfInterest = 6;
 
+        //Taking input details from user
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Welcome to SBI. Please enter the details to create account.");
+
+        System.out.println("Enter name : ");
+        String name = sc.next();
+
+        System.out.println("Enter balance : ");
+        int intialBalance = sc.nextInt();
+
+        System.out.println("Enter password : ");
+        String password = sc.next();
+
+        SBI sbiAccount = new SBI(intialBalance, password, name);
+
+        //Entering details manually
         SBI account1 = new SBI(200000, "123", "Rahul");
 
         SBI account2 = new SBI(150000, "456", "Arun");
@@ -21,7 +40,7 @@ public class Main {
         System.out.println("Balance in account1 is : " + balance1);
 
         //Add money
-        String bankMessage = account2.addMoney(50000);
+        String bankMessage = sbiAccount.addMoney(50000);
         System.out.println(bankMessage);
 
         //Withdraw money (wrong pw)
@@ -32,6 +51,9 @@ public class Main {
         String message1 = account3.withdrawMoney(50000, "789");
         System.out.println(message1);
 
+        //Change password
+        String pw = account2.changePassword("456", "654");
+
         //Calculate RoI
         double interest = account1.calculateInterest(20);
         System.out.println("Total interest you will get is : "+ interest);
@@ -39,5 +61,6 @@ public class Main {
         //Calculate RoI
         double interest1 = account3.calculateInterest(20);
         System.out.println("Total interest you will get is : "+ interest1);
+
     }
 }

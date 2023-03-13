@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5247d607-78a1-4115-b4fb-7a918ea697e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bank Application.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/application/BankInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/application/HDFC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/application/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bank/application/SBI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/application/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
